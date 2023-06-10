@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Description Car View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DescriptionCarViewController" id="Y6W-OH-hqX" customClass="DescriptionCarViewController" customModule="DesafioTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-Bk-o4b">
+                                <rect key="frame" x="25" y="84" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Fd-d3-JoA">
+                                <rect key="frame" x="25" y="189" width="343" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoR-ie-I0J">
+                                <rect key="frame" x="25" y="415.66666666666669" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Fd-d3-JoA" secondAttribute="trailing" constant="25" id="7P7-ct-Mmh"/>
+                            <constraint firstItem="YoR-ie-I0J" firstAttribute="top" secondItem="1Fd-d3-JoA" secondAttribute="bottom" constant="50" id="MDX-S6-Ckd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YoR-ie-I0J" secondAttribute="trailing" constant="25" id="NfK-qi-nDd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Fd-d3-JoA" secondAttribute="trailing" constant="25" id="U4S-Y2-kX8"/>
+                            <constraint firstItem="YoR-ie-I0J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="UOa-ky-1sc"/>
+                            <constraint firstItem="1Fd-d3-JoA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="f7b-JB-YdO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Fd-d3-JoA" secondAttribute="trailing" constant="25" id="jdP-IB-GeK"/>
+                            <constraint firstItem="AZq-Bk-o4b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="qr5-rL-k2x"/>
+                            <constraint firstItem="AZq-Bk-o4b" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="sE8-ZG-vT9"/>
+                            <constraint firstItem="1Fd-d3-JoA" firstAttribute="top" secondItem="AZq-Bk-o4b" secondAttribute="bottom" constant="25" id="yrp-7E-dAb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionCar" destination="YoR-ie-I0J" id="zst-ZB-4da"/>
+                        <outlet property="imageCar" destination="1Fd-d3-JoA" id="KUt-nJ-uzu"/>
+                        <outlet property="titleCar" destination="AZq-Bk-o4b" id="GHU-sW-Qnx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="5"/>
+        </scene>
+    </scenes>
+</document>
